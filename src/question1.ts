@@ -6,7 +6,10 @@
  * @param multipleBy
  */
 export const sumOfMultiples = (limit: number, multipleBy: number): number => {
-  const coefficient = Math.floor((limit - 1) / multipleBy);
+  if (limit === 0) {
+    return 0;
+  }
+  const coefficient = Math.trunc((limit - 1) / multipleBy);
   return multipleBy * ((coefficient * (coefficient + 1)) / 2);
 };
 
