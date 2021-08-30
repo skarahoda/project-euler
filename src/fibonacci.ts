@@ -1,7 +1,8 @@
-
-
-const fibonacciNumbers = [1,2];
+const fibonacciNumbers = [1, 2];
 
 export const getFibonacci = (i: number): number => {
-    return fibonacciNumbers[i] ?? (fibonacciNumbers[i] = getFibonacci(i-2) + getFibonacci(i-1));
-}
+  if (fibonacciNumbers[i] === undefined) {
+    fibonacciNumbers[i] = getFibonacci(i - 2) + getFibonacci(i - 1);
+  }
+  return fibonacciNumbers[i];
+};

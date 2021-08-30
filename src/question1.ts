@@ -6,14 +6,18 @@
  * @param multipleBy
  */
 export const sumOfMultiples = (limit: number, multipleBy: number): number => {
-    const coefficient = ((limit - 1) / multipleBy) >> 0;
-    return multipleBy * ((coefficient * (coefficient +1)) / 2);
-}
+  const coefficient = Math.floor((limit - 1) / multipleBy);
+  return multipleBy * ((coefficient * (coefficient + 1)) / 2);
+};
 
-export const sumOfTwoMultiples = (limit: number, firstMultipleBy: number, secondMultipleBy: number) => {
+export const sumOfTwoMultiples = (
+  limit: number,
+  firstMultipleBy: number,
+  secondMultipleBy: number,
+) => {
   const firstSum = sumOfMultiples(limit, firstMultipleBy);
   const secondSum = sumOfMultiples(limit, secondMultipleBy);
   const doubledSum = sumOfMultiples(limit, firstMultipleBy * secondMultipleBy);
 
   return firstSum + secondSum - doubledSum;
-}
+};
