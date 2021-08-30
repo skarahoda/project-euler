@@ -1,0 +1,36 @@
+{
+  "name": "project-euler",
+  "version": "0.0.0",
+  "description": "Node-js solutions for Project Euler",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skarahoda/project-euler.git"
+  },
+  "keywords": [
+    "euler",
+    "node"
+  ],
+  "author": {
+    "name": "Sertaç Karahoda",
+    "email": "sertackarahoda@gmail.com"
+  },
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/skarahoda/project-euler/issues"
+  },
+  "homepage": "https://github.com/skarahoda/project-euler#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "babel-jest": "^27.1.0",
+    "jest": "^27.1.0"
+  }
+}
