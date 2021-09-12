@@ -3,7 +3,7 @@ import { product } from '../../mathUtils';
 export const findMaxGreatestProductOfAdjacentDigits = (
   n: number | bigint,
   numberOfDigits: number,
-) => {
+): number => {
   const digits = n.toString().split('').map((digit) => Number(digit));
   let currentProduct = product(...digits.slice(0, numberOfDigits));
   let result = currentProduct;

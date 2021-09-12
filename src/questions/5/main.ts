@@ -1,4 +1,4 @@
-export const smallestMultiple = (max: number) => {
+export const smallestMultiple = (max: number): number => {
   let result = 2;
   for (let i = 3; i <= max; i += 1) {
     const mod = result % i;

@@ -1,4 +1,4 @@
-const getMaxNumber = (numberOfDigits: number) => (
+const getMaxNumber = (numberOfDigits: number): number => (
   Number(
     Array.from(
       { length: numberOfDigits },

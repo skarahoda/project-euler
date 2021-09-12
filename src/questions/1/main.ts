@@ -17,7 +17,7 @@ export const sumOfTwoMultiples = (
   limit: number,
   firstMultipleBy: number,
   secondMultipleBy: number,
-) => {
+): number => {
   const firstSum = sumOfMultiples(limit, firstMultipleBy);
   const secondSum = sumOfMultiples(limit, secondMultipleBy);
   const doubledSum = sumOfMultiples(limit, firstMultipleBy * secondMultipleBy);

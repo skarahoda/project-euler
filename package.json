@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint .",
-    "prepare": "husky install"
+    "lint": "eslint **/*.ts",
+    "lint:staged": "lint-staged",
+    "prepare": "husky install",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -25,12 +27,11 @@
     "url": "https://github.com/skarahoda/project-euler/issues"
   },
   "homepage": "https://github.com/skarahoda/project-euler#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
-    "@babel/preset-typescript": "^7.15.0"
-  },
-  "devDependencies": {
+    "@babel/preset-typescript": "^7.15.0",
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
@@ -41,7 +42,8 @@
     "eslint-plugin-import": "^2.24.2",
     "husky": "^7.0.2",
     "jest": "^27.1.0",
-    "lint-staged": "^11.1.2"
+    "lint-staged": "^11.1.2",
+    "typescript": "^4.4.3"
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix"

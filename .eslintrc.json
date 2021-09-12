@@ -17,6 +17,8 @@
     ],
     "rules": {
         "import/prefer-default-export": "off",
-        "import/no-default-export": "error"
+        "import/no-default-export": "error",
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/no-explicit-any": "error"
     }
 }
