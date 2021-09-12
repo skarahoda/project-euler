@@ -1,4 +1,4 @@
-import { sumSquareDifference } from './question6';
+import { sumSquareDifference } from './main';
 
 describe('sumSquareDifference', () => {
   it.each`

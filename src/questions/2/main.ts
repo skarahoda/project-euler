@@ -1,5 +1,4 @@
-import { getFibonacci } from './fibonacci';
-import { isEven } from './math';
+import { getFibonacci, isEven } from '../../mathUtils';
 
 export const sumOfEvenFibonacci = (limit: number): number => {
   let sum = 0;

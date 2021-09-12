@@ -1,4 +1,4 @@
-import { sumOfMultiples, sumOfTwoMultiples } from './question1';
+import { sumOfMultiples, sumOfTwoMultiples } from './main';
 
 describe('sumOfMultiples', () => {
   it.each`

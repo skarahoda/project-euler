@@ -1,4 +1,4 @@
-import { product } from './math';
+import { product } from '../../mathUtils';
 
 export const findMaxGreatestProductOfAdjacentDigits = (
   n: number | bigint,

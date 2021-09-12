@@ -1,4 +1,4 @@
-import { getNthPrime } from './question7';
+import { getNthPrime } from './main';
 
 describe('getNthPrime', () => {
   it.each`

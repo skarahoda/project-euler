@@ -1,4 +1,4 @@
-import { getLargestPrimeFactor } from './question3';
+import { getLargestPrimeFactor } from './main';
 
 describe('getLargestPrimeFactor', () => {
   it('should return the answer', () => {

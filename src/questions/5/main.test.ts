@@ -1,4 +1,4 @@
-import { smallestMultiple } from './question5';
+import { smallestMultiple } from './main';
 
 describe('smallestMultiple', () => {
   it.each`

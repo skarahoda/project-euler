@@ -1,4 +1,4 @@
-import { sumOfEvenFibonacci } from './question2';
+import { sumOfEvenFibonacci } from './main';
 
 describe('sumOfTwoMultiples', () => {
   it.each`
