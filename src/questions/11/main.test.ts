@@ -1,6 +1,6 @@
 import { findLargestProductInGrid } from './main';
 
-describe('sumOfPrimes', () => {
+describe('findLargestProductInGrid', () => {
   it('should find the biggest element when the numberOfElements is 1', () => {
     expect(findLargestProductInGrid([[1, 2], [3, 4]], 1)).toBe(4);
   });
