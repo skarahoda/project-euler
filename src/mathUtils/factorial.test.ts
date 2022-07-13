@@ -3,12 +3,12 @@ import { factorial } from './factorial';
 describe('factorial', () => {
   it.each`
             input            | expected
-            ${1}             | ${1}
-            ${2}             | ${2}
-            ${3}             | ${6}
-            ${4}             | ${24}
-            ${5}             | ${120}
-            ${6}             | ${720}
+            ${1}             | ${1n}
+            ${2}             | ${2n}
+            ${3}             | ${6n}
+            ${4}             | ${24n}
+            ${5}             | ${120n}
+            ${6}             | ${720n}
         `(
     'should return $expected when the input is $input',
     ({
