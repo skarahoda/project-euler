@@ -1,15 +1,15 @@
-export const getLengthOfCollatzSequence = (n: number): number => {
-  let result = 1;
+const getCollatzSequenceLength = (n: number, foundSequences: Map<number, number>): number => {
+  let result = 0;
   let current = n;
-  while (current !== 1) {
+  while (current >= n) {
+    result += 1;
     if (current % 2 === 0) {
       current /= 2;
     } else {
       current = current * 3 + 1;
     }
-    result += 1;
   }
-  return result;
+  return result + foundSequences.get(current);
 };
 
 export const findLongestCollatzSequence = (n: number): number => {
@@ -17,12 +17,15 @@ export const findLongestCollatzSequence = (n: number): number => {
     value: 1,
     length: 1,
   };
-  for (let i = n; i > 1; i -= 1) {
-    const length = getLengthOfCollatzSequence(i);
-    if (length > result.length) {
+  const foundSequences: Map<number, number> = new Map();
+  foundSequences.set(1, 1);
+  for (let i = 2; i <= n; i += 1) {
+    const sequenceLength = getCollatzSequenceLength(i, foundSequences);
+    foundSequences.set(i, sequenceLength);
+    if (sequenceLength > result.length) {
       result = {
         value: i,
-        length,
+        length: sequenceLength,
       };
     }
   }
