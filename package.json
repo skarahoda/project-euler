@@ -27,7 +27,6 @@
     "url": "https://github.com/skarahoda/project-euler/issues"
   },
   "homepage": "https://github.com/skarahoda/project-euler#readme",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
